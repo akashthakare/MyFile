@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<form action="index.php" name="myform">
+<input type="text" name="name">
+<a href="javascript:submitform()>serch</a>
+<script type="text/javascript">
+function submitform()
+{
+document.myform.submit();
+}
+
+</script>
+</body>
+</html>

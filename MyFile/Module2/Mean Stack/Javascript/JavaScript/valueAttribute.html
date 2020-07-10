@@ -1,0 +1,79 @@
+<html>
+<!--The value attribute in HTML is used to specify the value of the element with which it is used. 
+It has different meaning for different HTML elements.
+Usage: It can be used with the following elements: 
+<input>, <button>, <meter>, <li>, <option> <progress> and <param>.
+
+<input>: When the value attribute is present, it specifies the initial value of the input element.
+-->
+
+
+<!--
+<head>
+<script>
+function change()
+{
+
+var temp=document.getElementById("btn").value;
+document.getElementById("g").innerHTML="welcome to"+temp;
+}
+</script>
+
+
+<button id="btn" value="Akola" onclick="change()">Click me..</button>
+
+
+<p id="g"></p>
+</head>
+<body>	
+-->
+
+
+<!--
+<head>
+<script>
+function change()
+{
+
+var temp=document.getElementById("inp").value;
+document.getElementById("g").innerHTML="welcome to"+temp;
+}
+</script>
+
+
+Input <input id="inp" type="text">
+<button id="btn" onclick="change()">Click here</button>
+
+
+<p id="g"></p>
+</head>
+<body>	-->
+
+
+
+<head>
+<script>
+function check()
+{
+var x=document.getElementById("uname").value;
+
+document.getElementById("print").innerHTML="Welcome "+x;
+}
+
+
+</script>
+</head>
+<form >  
+            Username: <input type="text" id="uname">  
+              
+            <br><br>  
+              
+            Password: <input type="password" name="pwd">  
+              
+            <br><br>  
+              <!--use input type "button" if you use "submit" then it will print but not display bz you submit it -->
+            <button type="button" onclick="check()" value="submit">  
+                Submit  
+            </button>  
+			<span id="print"></span>
+        </form>  

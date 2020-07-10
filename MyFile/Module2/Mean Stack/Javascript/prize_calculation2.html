@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function multiply() {
+  a = Number(document.getElementById('QTY').value);
+  b = Number(document.getElementById('PPRICE').value);
+  c = a * b;
+
+  document.getElementById('TOTAL').value = c;
+}
+</script>
+</head>
+<body>
+<tr>
+  <td>Peda 100/Kg</td>
+  <td>
+    <input type="text" value="" name="QTY" id="QTY" onKeyUp="multiply()" />
+  </td>
+  <td>
+    <input type="text" name="PPRICE" id="PPRICE" value="100" readonly/>
+  </td>
+  <td>
+    <input type="text" name="TOTAL" id="TOTAL" />
+  </td>
+</tr>
+
+</body>
+</html> 

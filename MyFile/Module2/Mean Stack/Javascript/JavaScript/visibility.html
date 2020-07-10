@@ -1,0 +1,46 @@
+<html>
+<!--visible: It is used to specify the element to be visible.It is a default value.
+hidden: Element is not visible but it affects layout.
+collapse: It hides the element when it is used on a table row or a cell.
+intial: It sets the visibility property to its default value.
+inherit: This property is inherited from its parent element -->
+<head>
+<script>
+
+/*
+function change()
+{
+ var x = document.getElementById("gfg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+}*/
+function change()
+{
+
+
+var x=document.getElementById("gfg");
+if(x.style.visibility=="hidden")
+{
+x.style.visibility="visible";
+}
+else{
+x.style.visibility="hidden";}
+
+}
+</script>
+
+
+</head>
+<body>
+<h1 style="color:green;">  GeeksForGeeks  </h1> 
+<p id="gfg"> A Computer science portal for geeks</p> 
+
+
+<button type="button" onclick="change()">Change visibility 
+        </button> 
+</body>
+</html>

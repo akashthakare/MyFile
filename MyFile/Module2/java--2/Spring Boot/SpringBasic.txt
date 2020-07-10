@@ -1,0 +1,38 @@
+Core java is called as the j2Se(Java standard edition.).This is basically used to develop standalone programs.Based on this sun had released the J2EE(Java enterprise edition.)This is basically used to develop the enterprise applications and also web applications.J2EE consists of Servlets,Jsp,Jdbc,EJb.
+
+
+Differences between Model, ModelMap, and ModelAndView
+
+DispatcherServlet is the front controller in Spring MVC that intercepts every requests and then dispatches/forwards it to an appropriate controller.
+
+
+
+@RequestParam and @PathVariable annotations are used for accessing the values from the request.
+
+The @RequestParam used for accessing the values of the query parameters where as @PathVariable used for accessing the values from the URI template.
+
+
+Procedure in MySQL:
+
+delimeter $$
+create procedure ifexist getRecord(int id)
+begin
+select * from emp where emp_id=id;
+
+
+end$$
+delimeter;
+
+
+create function if exists fnname() returns varchar(20)
+begin
+
+declare x varchar(20);
+declare y varchar(20);
+select "Hello","world" into x,y;
+return cocate(x," ",y);
+end$$
+delimeter;
+
+
+

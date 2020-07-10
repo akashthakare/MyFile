@@ -1,0 +1,44 @@
+DBT:REVISION
+
+1.char vs varchar
+Ex:
+X Char(10)/Y Varchar(10)
+if we stored data of 3 character then X column occupy 10 full but Y occupy 3 only.
+
+
+UNIQUE:can have more than one NULL values.
+PK can not change value if its value use as FK in other table
+
+UNION-UNION ALL
+1. no. column and data type should be same
+2. column name may be different
+
+
+
+OBJECT:table ,index,trigger,view
+if base table delete then view not deleted(not active also) but index and trigger deleted
+
+
+
+
+
+
+https://www.geeksforgeeks.org/output-of-c-program-2/?ref=rp
+https://www.quora.com/topic/Technology
+
+
+
+
+
+
+
+
+
+
+
+AWP and MEAN Stack:
+
+1.for data tranfer we use XML and JSON
+2.API
+3.CallBack Function and Anonymous Function
+4.REST Service

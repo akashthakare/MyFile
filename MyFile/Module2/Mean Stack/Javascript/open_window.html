@@ -1,0 +1,60 @@
+<html>
+<head>
+<script>
+function openWin() {
+    var w = window.open("", "", "width=400, height=200");
+    w.opener.document.getElementById("demo").innerHTML = 
+    "A new window has been opened.";
+	w.document.open();<!-- Click the button to open a new window and add some content -->
+    w.document.write("<h2>Hello World!</h2>");
+    w.document.close();
+}
+</script>
+</head>
+<body>
+
+<button onclick="openWin()">Open myWindow</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+<!--
+<html>
+<head>
+<script>
+function openWin() {
+    window.open("https://www.w3schools.com");
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Open Window" onclick="openWin()">
+</form>
+</body>
+
+</html> -->
+
+
+<!--
+<html>
+<head>
+<script>
+function openWin() {
+    var myWindow = window.open("", "", "width=400, height=200");
+    myWindow.opener.document.getElementById("demo").innerHTML = 
+    "A new window has been opened.";
+}
+</script>
+</head>
+<body>
+
+<button onclick="openWin()">Open myWindow</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+-->

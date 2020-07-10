@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function validateForm()
+{
+var nm=document.myform.myname.value;
+var pw=document.myform.pwd.value;
+var n=document.myform.num.value;
+
+if(nm==null || nm=="")
+{
+alert("enter name");
+return false;
+}
+else
+{
+if(pw.length<6)
+{
+alert("enter pwd length agreater than 8");
+return false;
+}
+if(isNaN(n) || n=="")
+{
+document.getElementById("msg").innerHTML="enter numbric value";
+return false;
+}
+
+}
+}
+
+</script>
+</head>
+<body>
+<form action="xyz.jsp" name="myform" onsubmit=" return validateForm()">
+Name<input type="text" name="myname"><br><!--for name -->
+password<input type="password" name="pwd"><br><!--for password -->
+Mob_No<input type="text" name="num"><br><!--for number only -->
+<span id="msg"></span>
+<input type="submit" value="Register"/>
+</body>
